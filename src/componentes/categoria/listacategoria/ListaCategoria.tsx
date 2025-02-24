@@ -10,9 +10,9 @@ function ListaCategoria() {
 
     async function buscarCategoria() {
         try {
-            await buscar('/categoria', setCategoria)
-        } catch (error: any) {
-            console.log("erro")
+            await buscar("/categorias", setCategoria);
+        } catch (error) {
+            console.error("Erro ao buscar categorias:", error);
         }
     }
 
